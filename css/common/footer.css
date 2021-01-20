@@ -1,0 +1,33 @@
+@import "reset.css";
+.footer_container{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer_nav_container{
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+}
+.footer_nav_item{
+  font-size: 12px;
+  margin-right: 20px;
+}
+.footer_nav_container a{
+  color: var(--text-color-white);
+}
+.footer_text{
+  font-size: 12px;
+}
+.footer_text > span{
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}

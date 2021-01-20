@@ -1,0 +1,37 @@
+<!-- 기본 템플렛 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>대일노무법인</title>
+<!-- css -->
+<link rel="stylesheet" href="/css/common/default.css">
+<!-- js -->
+<!-- 폰트어썸 -->
+<script src="https://kit.fontawesome.com/109a8b14d9.js" crossorigin="anonymous"></script>
+<!-- 제이쿼리 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <!-- 모달창 -->
+  <div class="modal_window">
+    <div class="loader"></div>
+  </div>
+  
+  <div class="grid_container">
+    <!-- 화면 상단 부분 -->
+    <header class="header" include-html="/view/common/header.html"></header>
+    
+    <!-- 화면 중앙 콘텐츠 부분 -->
+    <main class="main" include-html=""></main>
+
+    <!-- 하단 nav 부분 -->
+    <nav class="footer_nav" include-html="/view/common/footer_nav.html"></nav>
+    
+    <!-- footer 부분 -->
+    <footer class="footer" include-html="/view/common/footer.html"></footer>
+  </div>
+  <script type="text/javascript" src="/js/common/include.js"></script>
+  <script>includeHTML();</script>
+</body>
+</html>
