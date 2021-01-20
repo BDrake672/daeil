@@ -74,6 +74,11 @@
 } */
 /* 그리그 셋팅 끝 */
 
+.member_person > ul > li > span{
+  display: block;
+  width: 100%;
+}
+
 .member_person_name{
   flex-direction: column;
   justify-content: flex-end;
