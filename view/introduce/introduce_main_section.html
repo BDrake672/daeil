@@ -75,113 +75,51 @@
 </section>
 
 <section class="member introduce_section_container hidden">
-  <ul class="member_container">
-    <li>
-      <ul class="member_nav hidden">
-        <li class="check" onclick="showThis(0)">세글자</li>
-        <li onclick="showThis(1)">세글자</li>
-        <li onclick="showThis(2)">세글자</li>
-      </ul>
-    </li>
-    <li class="member_person">
-      <ul>
-        <li class="member_person_name">
-          <div>
+  <div class="member_container">
+    <div class="member_tag">
+      <a href="#" class="current">이름</a>
+      <a href="#">이름</a>
+      <a href="#">이름</a>
+    </div>
+    <div class="peaple_container">
+      <div class="person_container">
+        <div class="person_picture">
+          <img src="" alt="사진">
+        </div>
+        <div class="person_information">
+          <div class="person_name">
             <h5>대표/공인노무사</h5>
-            <h4>손강용</h4>
+            <ul>
+              <li><h4>손강용</h4></li>
+            </ul>
           </div>
-        </li>
-        <li class="member_person_picture">
-          <div><img src="" alt="사진"></div>
-        </li>
-        <li class="member_person_education">
-          <h5>학력</h5>
-        </li>
-        <li class="member_person_education_text">
-          <span>학력내용</span>
-        </li>
-        <li class="member_person_field">
-          <h5>전문분야</h5>
-        </li>
-        <li class="member_person_field_text">
-          <span>전문분야 내용</span>
-        </li>
-        <li class="member_person_career">
-          <h5>경력</h5>
-        </li>
-        <li class="member_person_career_text">
-          <span>
-            －삼성 SDI 법무팀<br>
-            －제일경영컨설팅 전문위원<br>
-            －씨티그룹 인사팀<br>
-            －한국물류협회 인사노무강사
-          </span>
-        </li>
-      </ul>
-    </li>
-    <li class="hidden member_person">
-      <ul>
-        <li class="member_person_name">
-          <div>
-            <h5>공인노무사</h5>
-            <h4>김희숙</h4>
+          <div class="person_major">
+            <h5>전문분야</h5>
+            <ul>
+              <li>· 전문분야1</li>
+              <li>· 전문분야2</li>
+            </ul>
           </div>
-        </li>
-        <li class="member_person_picture">
-          <div><img src="" alt="사진"></div>
-        </li>
-        <li class="member_person_education">
-          <h5>학력</h5>
-        </li>
-        <li class="member_person_education_text">
-          <span>학력내용</span>
-        </li>
-        <li class="member_person_field">
-          <h5>전문분야</h5>
-        </li>
-        <li class="member_person_field_text">
-          <span>전문분야 내용</span>
-        </li>
-        <li class="member_person_career">
-          <h5>경력</h5>
-        </li>
-        <li class="member_person_career_text">
-          <span>경력 내용</span>
-        </li>
-      </ul>
-    </li>
-    <li class="hidden member_person">
-      <ul>
-        <li class="member_person_name">
-          <div>
-            <h5>공인노무사</h5>
-            <h4>박재원</h4>
+          <div class="person_career">
+            <h5>경력사항</h5>
+            <ul>
+              <li>· 삼성 SDI 법무팀</li>
+              <li>· 제일경영컨설팅 전문위원</li>
+              <li>· 씨티그룹 인사팀</li>
+              <li>· 한국물류협회 인사노무강사</li>
+            </ul>
           </div>
-        </li>
-        <li class="member_person_picture">
-          <div><img src="" alt="사진"></div>
-        </li>
-        <li class="member_person_education">
-          <h5>학력</h5>
-        </li>
-        <li class="member_person_education_text">
-          <span>학력내용</span>
-        </li>
-        <li class="member_person_field">
-          <h5>전문분야</h5>
-        </li>
-        <li class="member_person_field_text">
-          <span>전문분야 내용</span>
-        </li>
-        <li class="member_person_career">
-          <h5>경력</h5>
-        </li>
-        <li class="member_person_career_text">
-          <span>경력 내용</span>
-        </li>
-      </ul>
-    </li>
-  </ul>
+          <div class="person_contact">
+            <h5>연락처</h5>
+            <ul>
+              <li>· TEL : 02-507-6161</li>
+              <li>· MAIL : email@email.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="map introduce_section_container hidden">
@@ -224,21 +162,6 @@
 </section>
 
 <script>
-  //(모바일 화면)변수로 들어온 이름과 같은 이름의 사람 페이지를 보여주는 기능
-  function showThis(index) {
-    const memberNavLiArr = document.querySelectorAll('.member_nav>li');
-    const memberPersonArr = document.querySelectorAll('.member_person');
-    for(let i = 0; i < memberNavLiArr.length; i++) {
-      if(i == index) {
-        memberNavLiArr[i].classList.add('check');
-        memberPersonArr[i].classList.remove('hidden');
-        continue;
-      }
-      memberNavLiArr[i].classList.remove('check');
-      memberPersonArr[i].classList.add('hidden');
-    }
-  }
-
   let page = getParameterByName('page');
   const introduceSectionContainerArr = document.querySelectorAll('.introduce_section_container');
   //받은 파라미터에 따라 해당되는 페이지를 보여주는 기능

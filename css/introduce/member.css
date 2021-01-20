@@ -1,8 +1,5 @@
 @import "/css/common/reset.css";
 
-.member_nav.hidden{
-  display: none;
-}
 .member.hidden{
   display: none;
 }
@@ -11,165 +8,78 @@
   width: 100%;
 }
 
+.member_container.hidden{
+  display: none;
+}
+
 .member_container{
   width: 100%;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  width: 100%;
 }
 
-.member_person{
-  padding-bottom: 20px 0;
-  margin-bottom: 20px;
+.member_tag{
+  display: flex;
+}
+
+.member_tag > a{
+  display: block;
+  padding: 5px 20px;
+  border: 1px solid #fff;
+  border-left: 0;
+  border-bottom: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: var(--logo-color);
+}
+
+.member_tag >a.current{
+  background-color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.peaple_container{
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  background-color: #fff;
+}
+
+.person_container{
+  display: flex;
+  width: 100%;
+}
+
+.person_picture{
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-gray);
+}
+.person_picture > img{
+  width: 300px;
+  height: 95%;
+  background-color: #fff;
+}
+
+.person_information{
+  width: 50%;
+  margin-left: 20px;
+}
+.person_information > div:first-child{
+  padding-bottom: 5px;
   border-bottom: 1px solid var(--logo-color);
 }
-.member_person > ul{
-  padding-bottom: 10px;
+.person_information > div:nth-child(even){
+  margin: 5px 0 10px;
 }
 
-/* 한 명 당 그리드 셋팅 */
-.member_person > ul{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 300px repeat(3, auto);
-}
-.member_person > ul > li{
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
-.member_person_name{
-  /* grid-column: 1/2;
-  grid-row: 1/2; */
-  border-bottom: 1px solid orange;
-}
-.member_person_picture{
-  /* grid-column: 2/3;
-  grid-row: 1/2; */
-  border-bottom: 1px solid orange;
-}
-/* .member_person_education{
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-.member_person_education_text{
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-.member_person_field{
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-.member_person_field_text{
-  grid-column: 2/3;
-  grid-row: 3/4;
-}
-.member_person_career{
-  grid-column: 1/2;
-  grid-row: 4/5;
-}
-.member_person_career_text{
-  grid-column: 2/3;
-  grid-row: 4/5;
-} */
-/* 그리그 셋팅 끝 */
-
-.member_person > ul > li > span{
-  display: block;
-  width: 100%;
-}
-
-.member_person_name{
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  box-sizing: border-box;
-  padding: 0 20px 10px 0;
-}
-.member_person_name > div{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.member_person_name h4{
-  margin-top: 5px;
-}
-
-.member_person_picture{
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  padding-bottom: 10px;
-}
-
-.member_person_picture > div{
-  width: 350px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-}
-
-.member_person_picture img{
-  width: 95%;
-  height: 95%;
-}
-
-.member_person_education,
-.member_person_field,
-.member_person_career{
-  justify-content: flex-end;
-  box-sizing: border-box;
-  padding: 10px 20px 0 0;
-}
-
-.member_person_education_text,
-.member_person_field_text,
-.member_person_career_text{
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  padding-top: 10px;
-  font-size: 1rem;
-}
-
-@media screen and (max-width: 1023px) {
-  /* .member_nav.hidden{
-    display: flex;
-  }
-  .member_person.hidden{
-    display: none;
-  } */
-  .member_container{
-    margin-top: 20px;
-    margin-left: 0;
-  }
-  /* .member_nav{
-    flex-direction: row;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 0 50px 30px;
-    color: var(--logo-color);
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
-  .member_nav > li{
-    background-color: var(--text-color-white);
-    text-align: center;
-    display: block;
-    width: 100px;
-    height: 30px;
-    line-height: 30px;
-    border: 1px solid var(--logo-color);
-    border-radius: 2px;
-    margin-right: 5px;
-  }
-  .member_nav > li:last-child{
-    margin-right: 0;
-  }
-  .member_nav > li.check{
-    background-color: var(--logo-color);
-    color: var(--text-color-white);
-  } */
+.person_information > div > ul{
+  padding: 0 5px;
 }

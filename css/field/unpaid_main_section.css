@@ -71,7 +71,6 @@
 
 .field_section_container span{
   display: block;
-  line-height: 1.3rem;
   padding-left: 10px;
 }
 
@@ -90,7 +89,6 @@
 /* 산재보상 관련 css */
 .industrial_accident table{
   align-self: center;
-  line-height: 1.3rem;
 }
 .industrial_accident table th,
 .industrial_accident table td{

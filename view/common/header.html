@@ -55,7 +55,26 @@
   nav_field.onmouseout = function() {
     nav_field_item_container.classList.add('hide');
   }
-
+  
+  //추가항목 마우스오버시 배경색 변경
+  const navIntroduceItem = document.querySelectorAll('.nav_introduce_item');
+  const navFieldItemArr = document.querySelectorAll('.nav_field_item');
+  for(let i = 0; i < navIntroduceItem.length; i++) {
+    navIntroduceItem[i].onmouseover = function() {
+      navIntroduceItem[i].classList.add('highlight');
+    }
+    navIntroduceItem[i].onmouseout = function() {
+      navIntroduceItem[i].classList.remove('highlight');
+    }
+  }
+  for(let i = 0; i < navFieldItemArr.length; i++) {
+    navFieldItemArr[i].onmouseover = function() {
+      navFieldItemArr[i].classList.add('highlight');
+    }
+    navFieldItemArr[i].onmouseout = function() {
+      navFieldItemArr[i].classList.remove('highlight');
+    }
+  }
   //아이콘 클릭 시 메뉴 보이게, 다시 누르면 안보이게
   const toggleBtn = document.querySelector('.header_nav_icon');
   const headerNav = document.querySelector('.header_nav');
