@@ -18,8 +18,10 @@
   background-color: #fff;
 }
 
-tr.post:first-child{
+.post{
   cursor: pointer;
+}
+.post:first-child{
   border-top: 1px solid #DDD;
 }
 .post_number{
