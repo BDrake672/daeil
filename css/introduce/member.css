@@ -12,6 +12,10 @@
   display: none;
 }
 
+.person_container.hidden{
+  display: none;
+}
+
 .member_container{
   width: 100%;
   display: flex;
@@ -43,6 +47,7 @@
 .peaple_container{
   width: 100%;
   display: flex;
+  box-sizing: border-box;
   padding: 10px;
   border-radius: 5px;
   border-top-left-radius: 0;
@@ -82,4 +87,10 @@
 
 .person_information > div > ul{
   padding: 0 5px;
+}
+
+@media screen and (max-width: 1023px) {
+  .member_container{
+    margin-top: 20px;
+  }
 }

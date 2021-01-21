@@ -9,7 +9,7 @@
 .greeting_img{
   grid-column: 1/2;
   background-color: white;
-  max-width: 500px;
+  width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,8 +17,8 @@
 }
 
 .greeting_img > img{
-  width: 98%;
-  height: 98%;
+  width: 95%;
+  height: 96%;
 }
 
 .greeting{
@@ -60,6 +60,7 @@
 .greeting_sign{
   display: flex;
   flex-direction: column;
+  text-align: right;
   align-content: flex-end;
 }
 

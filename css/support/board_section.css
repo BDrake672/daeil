@@ -1,0 +1,57 @@
+@import "/css/common/reset.css";
+
+.support_contents{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.board{
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+}
+
+tr.post{
+  cursor: pointer;
+}
+.post_number{
+  width: 10%;
+}
+.post_user{
+  width: 25%;
+}
+
+/* 페이지 네이션 관련 css */
+.page_nation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.page_nation > a {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.first_page{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.last_page{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.first_page,
+.last_page{
+  color: var(--background-gray);
+  background-color: var(--logo-color);
+}
+.pages{
+  border-right: 1px solid var(--background-gray);
+}
+.pages:last-child{
+  border: 0;
+}

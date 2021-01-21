@@ -3,33 +3,6 @@
 <link rel="stylesheet" href="/css/introduce/greeting.css">
 <link rel="stylesheet" href="/css/introduce/member.css">
 <link rel="stylesheet" href="/css/introduce/map.css">
-<!-- script -->
-<script>
-  const navArr = document.querySelectorAll('.nav_container>a');
-  //클릭된 nav item의 색상을 변경하고 해당 카테고리를 보여주는 기능
-  for(let i = 0; i < navArr.length; i++) {
-    navArr[i].onclick = function() {
-      let introduceSectionContainerArr = document.querySelectorAll('.introduce_section_container');
-      for(let j = 0; j < navArr.length; j++) {
-        if(i == j) {
-          navArr[j].classList.add('current');
-          introduceSectionContainerArr[j].classList.remove('hidden');
-          continue;
-        }
-        navArr[j].classList.remove('current');
-        introduceSectionContainerArr[j].classList.add('hidden');
-      }
-    }
-  }
-
-  //페이지 파라미터로 들어온 이름을 알아내는 기능
-  function getParameterByName(name) {
-    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-    let regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
-        results = regex.exec(location.search);
-    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
-  }
-</script>
 
 <nav class="navication">
   <ul class="nav_container">
@@ -66,8 +39,8 @@
       </li>
       <li>
         <div class="greeting_sign">
-          <h5>대일노무법인 대표 손강용</h5>
-          <img src="/images/common/sign.gif" alt="서명">
+          <h5>대일노무법인 대표<br>손강용</h5>
+          <!-- <img src="/images/common/sign.gif" alt="서명"> -->
         </div>
       </li>
     </ul>
@@ -77,9 +50,9 @@
 <section class="member introduce_section_container hidden">
   <div class="member_container">
     <div class="member_tag">
-      <a href="#" class="current">이름</a>
-      <a href="#">이름</a>
-      <a href="#">이름</a>
+      <a href="#" class="current">손강용</a>
+      <a href="#">김희숙</a>
+      <a href="#">박재원</a>
     </div>
     <div class="peaple_container">
       <div class="person_container">
@@ -113,6 +86,80 @@
             <h5>연락처</h5>
             <ul>
               <li>· TEL : 02-507-6161</li>
+              <li>· MAIL : email@email.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="person_container hidden">
+        <div class="person_picture">
+          <img src="" alt="사진">
+        </div>
+        <div class="person_information">
+          <div class="person_name">
+            <h5>공인노무사</h5>
+            <ul>
+              <li><h4>김희숙</h4></li>
+            </ul>
+          </div>
+          <div class="person_major">
+            <h5>전문분야</h5>
+            <ul>
+              <li>· 전문분야1</li>
+              <li>· 전문분야2</li>
+            </ul>
+          </div>
+          <div class="person_career">
+            <h5>경력사항</h5>
+            <ul>
+              <li>· 경력사항1</li>
+              <li>· 경력사항2</li>
+              <li>· 경력사항3</li>
+              <li>· 경력사항4</li>
+            </ul>
+          </div>
+          <div class="person_contact">
+            <h5>연락처</h5>
+            <ul>
+              <li>· TEL : 02-3447-6161</li>
+              <li>· MAIL : email@email.com</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="person_container hidden">
+        <div class="person_picture">
+          <img src="" alt="사진">
+        </div>
+        <div class="person_information">
+          <div class="person_name">
+            <h5>공인노무사</h5>
+            <ul>
+              <li><h4>박재원</h4></li>
+            </ul>
+          </div>
+          <div class="person_major">
+            <h5>전문분야</h5>
+            <ul>
+              <li>· 전문분야1</li>
+              <li>· 전문분야2</li>
+            </ul>
+          </div>
+          <div class="person_career">
+            <h5>경력사항</h5>
+            <ul>
+              <li>· 경력사항1</li>
+              <li>· 경력사항2</li>
+              <li>· 경력사항3</li>
+              <li>· 경력사항4</li>
+            </ul>
+          </div>
+          <div class="person_contact">
+            <h5>연락처</h5>
+            <ul>
+              <li>· TEL : 070-4256-5409</li>
               <li>· MAIL : email@email.com</li>
             </ul>
           </div>
@@ -161,24 +208,5 @@
   </ul>
 </section>
 
-<script>
-  let page = getParameterByName('page');
-  const introduceSectionContainerArr = document.querySelectorAll('.introduce_section_container');
-  //받은 파라미터에 따라 해당되는 페이지를 보여주는 기능
-  for(let i = 0; i < introduceSectionContainerArr.length; i++) {
-    if(page == "") {
-      introduceSectionContainerArr[0].classList.remove('hidden');
-      for(let j = 1; j < introduceSectionContainerArr.length; j++) {
-        introduceSectionContainerArr[j].classList.add('hidden');
-      }
-      break;
-    }
-    if(introduceSectionContainerArr[i].classList.contains(page)) {
-      introduceSectionContainerArr[i].classList.remove('hidden');
-      navArr[i].classList.add('current');
-      continue;
-    }
-    introduceSectionContainerArr[i].classList.add('hidden');
-    navArr[i].classList.remove('current');
-  }
-</script>
+<!-- script -->
+<script src="/js/introduce/introduce_main.js"></script>

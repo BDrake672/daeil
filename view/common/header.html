@@ -26,7 +26,13 @@
         <li class="nav_field_item"><a href="/view/field/field.html?page=labor_union">노동조합/노사관계</a></li>
       </ul>
     </li>
-    <li class="nav_contact"><a href="/view/common/not_ready.html">상담신청</a></li>
+    <li class="nav_contact">
+      <a href="#">고객지원<span class="arrow">▼</span></a>
+      <ul class="hide nav_support_item_container">
+        <li class="nav_support_item"><a href="/view/support/support.html">자료실</a></li>
+        <li class="nav_support_item"><a href="/view/common/not_ready.html">상담신청</a></li>
+      </ul>
+    </li>
   </ul>
   <!-- 상단 메뉴 아이콘 -->
   <a class="header_nav_icon"><i class="fas fa-bars"></i></a>
@@ -34,64 +40,5 @@
   <a href="#header" class="header_icon_top hidden"><h6>▲</h6></a>
 </div>
 
-<script>
-  //header 네비게이션 마우스 오버시 추가 항목 보이게
-  const nav_introduce = document.querySelector('.nav_introduce');
-  const nav_field = document.querySelector('.nav_field');
-  
-  const nav_inroduce_item_container = document.querySelector('.nav_introduce_item_container');
-  const nav_field_item_container = document.querySelector('.nav_field_item_container');
-  //회사소개 마우스 이벤트
-  nav_introduce.onmouseover = function() {
-    nav_inroduce_item_container.classList.remove('hide');
-  }
-  nav_introduce.onmouseout = function() {
-    nav_inroduce_item_container.classList.add('hide');
-  }
-  //업무분야 마우스 이벤트
-  nav_field.onmouseover = function() {
-    nav_field_item_container.classList.remove('hide');
-  }
-  nav_field.onmouseout = function() {
-    nav_field_item_container.classList.add('hide');
-  }
-  
-  //추가항목 마우스오버시 배경색 변경
-  const navIntroduceItem = document.querySelectorAll('.nav_introduce_item');
-  const navFieldItemArr = document.querySelectorAll('.nav_field_item');
-  for(let i = 0; i < navIntroduceItem.length; i++) {
-    navIntroduceItem[i].onmouseover = function() {
-      navIntroduceItem[i].classList.add('highlight');
-    }
-    navIntroduceItem[i].onmouseout = function() {
-      navIntroduceItem[i].classList.remove('highlight');
-    }
-  }
-  for(let i = 0; i < navFieldItemArr.length; i++) {
-    navFieldItemArr[i].onmouseover = function() {
-      navFieldItemArr[i].classList.add('highlight');
-    }
-    navFieldItemArr[i].onmouseout = function() {
-      navFieldItemArr[i].classList.remove('highlight');
-    }
-  }
-  //아이콘 클릭 시 메뉴 보이게, 다시 누르면 안보이게
-  const toggleBtn = document.querySelector('.header_nav_icon');
-  const headerNav = document.querySelector('.header_nav');
-
-  toggleBtn.addEventListener('click', function() {
-    this.classList.toggle('active');
-    headerNav.classList.toggle('active');
-  });
-
-  //TOP버튼 스크롤 있을때만 보이기
-  const topIcon = document.querySelector('.header_icon_top');
-  $(window).scroll(function(event) {
-    topIcon.classList.remove('hidden');
-    
-    //스크롤이 최상단이라면 아이콘 숨기기
-    if(window.scrollY == 0) {
-      topIcon.classList.add('hidden');
-    }
-  });
-</script>
+<!-- js -->
+<script src="/js/common/header.js"></script>
