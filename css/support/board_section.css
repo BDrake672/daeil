@@ -8,12 +8,19 @@
 
 .board{
   width: 100%;
+  height: auto;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 10px;
+  box-sizing: border-box;
   background-color: #fff;
 }
 
-tr.post{
+tr.post:first-child{
   cursor: pointer;
+  border-top: 1px solid #DDD;
 }
 .post_number{
   width: 10%;
@@ -50,8 +57,15 @@ tr.post{
   background-color: var(--logo-color);
 }
 .pages{
-  border-right: 1px solid var(--background-gray);
+  border: 1px solid #ddd;
+  border-left: 0;
 }
 .pages:last-child{
-  border: 0;
+  border-right: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .support_contents{
+    margin-top: 20px;
+  }
 }
