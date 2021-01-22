@@ -64,6 +64,15 @@
   background-color: white;
   width: 100%;
   height: 100%;
+  filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
+}
+.section_img > img:hover{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
 }
 .section_text{
   width: 300px;

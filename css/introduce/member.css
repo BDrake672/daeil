@@ -77,12 +77,17 @@
   width: 50%;
   margin-left: 20px;
 }
-.person_information > div:first-child{
-  padding-bottom: 5px;
+.person_name{
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--logo-color);
 }
-.person_information > div:nth-child(even){
-  margin: 5px 0 10px;
+.person_major,
+.person_career,
+.person_contact{
+  margin: 10px 0;
+}
+.person_contact{
+  margin-bottom: 0;
 }
 
 .person_information > div > ul{

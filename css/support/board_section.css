@@ -59,11 +59,23 @@
   background-color: var(--logo-color);
 }
 .pages{
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #ddd;
   border-left: 0;
 }
 .pages:last-child{
   border-right: 0;
+}
+.pages > a, .pages > a:visited,
+.pages > a:active, .pages > a:hover{
+  color: var(--logo-color);
+}
+.pages > a.current_page{
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1023px) {

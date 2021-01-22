@@ -6,7 +6,7 @@ function getParameterByName(name) {
   return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
-let page = getParameterByName('page');
+let postIndex = getParameterByName('post_index');
 
 const table_board = db.ref('board');
 let posts = [];
@@ -26,8 +26,7 @@ const getData = (ref) => {
 
 getData(table_board)
   .then((value) => {
-    let index = page - 1;
-    makePost(posts, index);
+    makePost(posts, postIndex);
   })
   .catch((error) => {
     // reject() was called
