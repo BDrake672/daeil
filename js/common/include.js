@@ -31,6 +31,22 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 const db = firebase.database();
+const auth = firebase.auth();
+
+// auth.signInWithEmailAndPassword('dragon6722@gmail.com', 'Thdus@l4fkd!')
+//   .then(function(firebaseUser) {
+//     console.log('로그인성공');
+//     db.ref("users/"+ firebaseUser.user.uid).once('value')
+//       .then(function(snapshot){
+
+//    });
+//   });
+  
+// let obj = {
+// 'upload_test' : 'testTEST'
+// };
+// db.ref('users/').set(obj);
+
 
 // const table_member = db.ref('member');
 // table_member.on('child_added', function(data) {
