@@ -9,6 +9,9 @@
 }
 
 /* carousel*/
+.carousel-indicators > li.hidden {
+  display: none;
+}
 .carousel-item{
   width: 100%;
   height: 500px;

@@ -13,12 +13,17 @@
 
 .footer_nav_container{
   display: flex;
+  width: 100%;
   margin-bottom: 20px;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 .footer_nav_item{
   font-size: 12px;
   margin-right: 20px;
+}
+.footer_nav_item_admin_login{
+  margin: 0 0 0 auto;
+  text-align: right;
 }
 .footer_nav_container a{
   color: var(--text-color-white);

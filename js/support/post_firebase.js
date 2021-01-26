@@ -27,6 +27,7 @@ const getData = (ref) => {
 getData(table_board)
   .then((value) => {
     makePost(posts, postIndex);
+    closeModalWindow();
   })
   .catch((error) => {
     // reject() was called

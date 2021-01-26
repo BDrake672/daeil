@@ -31,6 +31,7 @@ getData(table_board)
       page = 1;
     }
     makePosts(posts, page);
+    closeModalWindow();
   })
   .catch((error) => {
     // reject() was called

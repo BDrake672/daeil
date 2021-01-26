@@ -40,5 +40,13 @@
   </div>
   <script type="text/javascript" src="/js/common/include.js"></script>
   <script>includeHTML();</script>
+  <script>
+    setTimeout(function() {
+      closeModalWindow();
+      setTimeout(function() {
+        location.href = '/';
+      }, 3000);
+    }, 1500);
+  </script>
 </body>
 </html>

@@ -42,19 +42,3 @@ for(let i = 0; i < introduceSectionContainerArr.length; i++) {
   introduceSectionContainerArr[i].classList.add('hidden');
   navArr[i].classList.remove('current');
 }
-
-//이름표를 클릭하면 해당인의 정보를 보여주는 기능
-const tagArr = document.querySelectorAll('.member_tag > a');
-const peaple = document.querySelectorAll('.person_container');
-
-for(let i = 0; i < tagArr.length; i++) {
-  tagArr[i].onclick = function() {
-    this.classList.add('current');
-    peaple[i].classList.remove('hidden');
-    for(let j = 0; j < tagArr.length; j++) {
-      if(j == i) { continue; }
-      tagArr[j].classList.remove('current');
-      peaple[j].classList.add('hidden');
-    }
-  }
-}

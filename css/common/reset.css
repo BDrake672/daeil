@@ -92,6 +92,9 @@ a:visited {
 .hide{
   display: none;
 }
+button.hidden{
+	display: none;
+}
 
 /* 로딩창 관련 css */
 .modal_window{

@@ -1,7 +1,7 @@
-setTimeout(function() {
-  const modal = document.querySelector('.modal_window');
-  modal.classList.add('hidden');
-}, 1500);
+// setTimeout(function() {
+//   const modal = document.querySelector('.modal_window');
+//   modal.classList.add('hidden');
+// }, 1500);
 
 function includeHTML() {
   let includeAttr = $('[include-html]');
@@ -15,6 +15,14 @@ function includeHTML() {
   });
 }
 
+// 모달창을 닫아주는 기능.
+// 파이어베이스 DB 읽어오는게 완료되면 호출하자.
+function closeModalWindow() {
+  let modal = document.querySelector('.modal_window');
+  modal.classList.add('hidden');
+}
+
+// 파이어베이스 초기화 및 접속
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -33,22 +41,14 @@ firebase.analytics();
 const db = firebase.database();
 const auth = firebase.auth();
 
-// auth.signInWithEmailAndPassword('dragon6722@gmail.com', 'Thdus@l4fkd!')
-//   .then(function(firebaseUser) {
-//     console.log('로그인성공');
-//     db.ref("users/"+ firebaseUser.user.uid).once('value')
-//       .then(function(snapshot){
-
-//    });
-//   });
-  
-// let obj = {
-// 'upload_test' : 'testTEST'
-// };
-// db.ref('users/').set(obj);
-
-
-// const table_member = db.ref('member');
-// table_member.on('child_added', function(data) {
-//   console.dir(data.val());
-// });
+//로그인이 되어있다면 수정/추가 버튼들 보여주는 기능
+function showAdminButton() {
+  auth.onAuthStateChanged(function (user) {
+    if(user != null) {
+      let changeBtnArr = document.querySelectorAll('button.button_admin');
+      for(let i = 0; i < changeBtnArr.length; i++) {
+        changeBtnArr[i].classList.remove('hidden');
+      }
+    }
+  });
+}
