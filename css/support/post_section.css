@@ -79,6 +79,13 @@ span.file{
   font-size: 1.1rem;
   font-weight: 600;
 }
+div.admin_button{
+  margin-top: 10px;
+  align-self: flex-end;
+}
+div.admin_button > button{
+  height: 40px;
+}
 
 @media screen and (max-width: 1023px) {
   .post_contents{

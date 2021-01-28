@@ -15,7 +15,7 @@
   <div class="post">
     <!-- 게시글 -->
     <div class="post_head">
-      <span class="post_title"><h5>게시글 제목</h5></span>
+      <span class="post_title"><h5>게시물 제목</h5></span>
       <span class="post_user">대일노무법인</span>
     </div>
     <div class="post_body">
@@ -23,7 +23,13 @@
       <span class="context">내용</span>
     </div>
   </div>
-  <div class="go_board"><a href="/view/support/support.html">목록으로</a></div>
+  <div class="hidden admin_button">
+    <button id="button_change_post" class="hidden button_admin" type="button">게시물 수정</button>
+    <button id="button_delete_post" class="hidden button_admin" type="button">게시물 삭제</button>
+  </div>
+  <div class="go_board">
+    <a href="/view/support/support.html">목록으로</a>
+  </div>
 </section>
 
 <!-- js -->

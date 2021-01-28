@@ -30,7 +30,11 @@
 .post_user{
   width: 25%;
 }
-
+.board tfoot td{
+  text-align: right;
+  padding: 20px;
+  padding-bottom: 0;
+}
 /* 페이지 네이션 관련 css */
 .page_nation{
   display: flex;
