@@ -1,0 +1,36 @@
+<!-- css -->
+<link rel="stylesheet" href="/css/common/nav.css">
+<link rel="stylesheet" href="/css/support/post_section.css">
+<link rel="stylesheet" href="/css/common/table.css">
+
+<!-- 네비게이션 -->
+<nav class="navigation">
+  <ul class="nav_container">
+    <a href="/view/support/support.html" class="current"><li><h6>자료실</h6></li></a>
+    <a href="/view/common/not_ready.html"><li><h6>상담신청</h6></li></a>
+  </ul>
+</nav>
+
+<section class="post_contents">
+  <div class="post">
+    <!-- 게시글 -->
+    <div class="post_head">
+      <span class="post_title"><h5>게시물 제목</h5></span>
+      <span class="post_user">대일노무법인</span>
+    </div>
+    <div class="post_body">
+      <span class="file">첨부파일 다운로드<a href="#" target="_sub"></a></span>
+      <span class="context">내용</span>
+    </div>
+  </div>
+  <div class="hidden admin_button">
+    <button id="button_change_post" class="hidden button_admin" type="button">게시물 수정</button>
+    <button id="button_delete_post" class="hidden button_admin" type="button">게시물 삭제</button>
+  </div>
+  <div class="go_board">
+    <a href="/view/support/support.html">목록으로</a>
+  </div>
+</section>
+
+<!-- js -->
+<script src="/js/support/post_firebase.js"></script>

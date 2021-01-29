@@ -1,0 +1,76 @@
+.contents.hidden{
+  display: none;
+}
+.greeting_container{
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.greeting_img{
+  grid-column: 1/2;
+  background-color: white;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.greeting_img > img{
+  width: 95%;
+  height: 96%;
+}
+
+.greeting{
+  grid-column: 3/4;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.greeting h3{
+  line-height: 2rem;
+}
+.greeting h4{
+  margin-bottom: 10px;
+}
+
+.greeting h5{
+  margin-bottom: 5px;
+}
+
+.greeting > li{
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.greeting > li > span{
+  line-height: 1.2rem;
+}
+
+.greeting > li:first-child {
+  margin-bottom: 30px;
+}
+
+.greeting > li:last-child{
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+.greeting_sign{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-content: flex-end;
+}
+
+@media screen and (max-width:1023px) {
+  .contents{
+    margin-top: 20px;
+    display: flex;
+  }
+  .greeting_container{
+    margin: 0;
+  }
+}

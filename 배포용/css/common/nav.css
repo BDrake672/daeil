@@ -1,0 +1,70 @@
+@import "/css/common/reset.css";
+
+.main{
+  margin-top: 0px;
+  display: flex;
+  padding: 32px 50px;
+  box-sizing: border-box;
+}
+.nav_container{
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.nav_container a{
+  width: 140px;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: var(--logo-color);
+  border: 1px solid var(--logo-color);
+  margin-bottom: 3px;
+}
+.nav_container li{
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+.nav_container li > h6{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.15rem;
+  font-weight: 600;  
+}
+
+.nav_container a, .nav_container a:visited,
+.nav_container a:hover, .nav_container a:active{
+  color: white;
+}
+
+@media screen and (max-width: 1023px){
+  .main{
+    flex-direction: column;
+  }
+  .nav_container{
+    width: 100%;
+    flex-direction: row;  
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav_container a{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .nav_container a{
+    border-right: 1px solid white;
+  }
+  .nav_container a:last-child{
+    border-right: 1px solid var(--logo-color);
+  }
+}
+
+.nav_container>a.current{
+  background-color: white;
+  color: var(--logo-color);
+}
