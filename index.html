@@ -1,4 +1,3 @@
-<!-- 기본 템플렛 -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,13 +23,13 @@
   <div class="modal_window">
     <div class="loader"></div>
   </div>
-  
+
   <div class="grid_container">
     <!-- 화면 상단 부분 -->
     <header class="header" include-html="/view/common/header.html"></header>
     
     <!-- 화면 중앙 콘텐츠 부분 -->
-    <main class="main" include-html="/view/introduce/introduce_main_section.html"></main>
+    <main class="main" include-html="/view/home/main.html"></main>
 
     <!-- 하단 nav 부분 -->
     <nav class="footer_nav" include-html="/view/common/footer_nav.html"></nav>
@@ -40,6 +39,6 @@
   </div>
   <script type="text/javascript" src="/js/common/include.js"></script>
   <script>includeHTML();</script>
-  <!-- <script src="/js/introduce/introduce_member.js"></script> -->
+  <script src="/js/home/main.js"></script>
 </body>
 </html>

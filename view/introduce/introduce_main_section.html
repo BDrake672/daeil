@@ -47,56 +47,27 @@
 </section>
 
 <section class="member introduce_section_container hidden">
-  <div class="member_container">
-    <div class="member_tag">
-      <a href="#" class="current">손강용</a>
-    </div>
-    <div class="peaple_container">
-      <div class="person_container">
-        <div class="person_picture">
-          <img src="" alt="사진">
-        </div>
-        <div class="person_information">
-          <div class="person_name">
-            <h5>대표/공인노무사</h5>
-            <ul>
-              <li><h4>손강용</h4></li>
-            </ul>
-          </div>
-          <div class="person_major">
-            <h5>전문분야</h5>
-            <ul>
-              <li>· 전문분야1</li>
-              <li>· 전문분야2</li>
-            </ul>
-          </div>
-          <div class="person_career">
-            <h5>경력사항</h5>
-            <ul>
-              <li>· 삼성 SDI 법무팀</li>
-              <li>· 제일경영컨설팅 전문위원</li>
-              <li>· 씨티그룹 인사팀</li>
-              <li>· 한국물류협회 인사노무강사</li>
-            </ul>
-          </div>
-          <div class="person_contact">
-            <h5>연락처</h5>
-            <ul>
-              <li>· TEL : 02-507-6161</li>
-              <li>· MAIL : email@email.com</li>
-            </ul>
-          </div>
-          <div>
-            <button id="btn_change_member1" class="hidden button_admin" type="button">정보수정</button>
-            <button id="btn_delete_member1" class="hidden button_admin" type="button">인물삭제</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- <div>
-      <button id="button_insert_new_member" class="hidden button_admin">구성원 추가</button>
-    </div> -->
+  <div class="not_ready">
+    <div><h2>페이지 <span>준비중</span>입니다.</h2></div>
   </div>
+
+  <style>
+    .not_ready{
+      width: 100%;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .not_ready h2{
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .not_ready span{
+      color: rgb(66, 64, 180);
+    }
+  </style>
 </section>
 
 <section class="map introduce_section_container hidden">
@@ -140,3 +111,4 @@
 
 <!-- script -->
 <script src="/js/introduce/introduce_main.js"></script>
+<script>closeModalWindow();</script>
