@@ -1,0 +1,46 @@
+@import '/css/common/reset.css';
+
+/* section 관련 */
+.fund_section {
+  background-color: #fff;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+/* nav 관련 */
+section > nav > ul{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--logo-color);
+  padding: 5px;
+  padding-bottom: 0;
+}
+
+section > nav > ul > a{
+  display: block;
+  width: calc(100% / 4);
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  padding: 5px 0;
+  border-right: 1px solid var(--background-gray);
+}
+section > nav > ul > a:last-child{
+  border-right: none;
+}
+section > nav > ul > a.current{
+  color: var(--logo-color);
+  background-color: #fff;
+  font-weight: 600;
+  border-right: none;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+section > nav > ul > a.before {
+  border-right: none;
+}
+
+/* main 관련 */
+.fund_main{
+  padding: 20px;
+}

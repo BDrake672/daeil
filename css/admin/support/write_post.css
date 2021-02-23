@@ -40,9 +40,19 @@ div.note-insert{
   width: 80px;
   text-align: center;
 }
-#post_attatchments{
-  font-size: 0.8rem;
-  margin-left: 5px;
+.file_name{
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+}
+#file_name{
+  display: block;
+  max-width: 60%;
+  width: auto;
+}
+.button_change_file{
+  margin-left: 10px;
+  margin-bottom: 5px;
 }
 .button_post_submit{
   display: flex;

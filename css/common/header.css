@@ -157,6 +157,7 @@ span.arrow{
   text-align: center;
   line-height: 40px;
   background-color: var(--logo-color);
+  border: 1px solid #fff;
 }
 .header_icon_top > h6 {
   display: inline;

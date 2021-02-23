@@ -1,0 +1,16 @@
+@import "/css/common/reset.css";
+
+.form_container{
+  width: 800px;
+  background-color: #fff;
+  margin: 20px auto;
+}
+
+.carousel_container{
+  padding: 10px;
+}
+
+.carousel_container > div{
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}

@@ -126,3 +126,22 @@ div.loader {
 .modal_window.hidden{
   display: none;
 }
+.loader.hidden{
+	display: none;
+}
+
+.file_upload_modal_window {
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file_upload_modal_window.hidden {
+  display: none;
+}

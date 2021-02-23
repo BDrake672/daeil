@@ -1,0 +1,51 @@
+@import '/css/common/reset.css';
+
+/* header 셋팅 */
+#support_header{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+#support_header > div{
+  margin: 0 40px;
+}
+#support_header > div > h3 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+a.request_contact{
+  background-color: var(--logo-color);
+  color: #fff;
+  display: inline-block;
+  border-width: 5px 10px;
+  border-color: var(--logo-color);
+  border-style: solid;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+
+/* top iCon 관련 */
+.header_icon_top.hidden{
+  display: none;
+}
+.header_icon_top{
+  display: block;
+  position: fixed;
+  bottom: 80px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 40px;
+  background-color: var(--logo-color);
+  border: 1px solid #fff;
+}
+.header_icon_top > h6 {
+  display: inline;
+  color: var(--text-color-white);
+}

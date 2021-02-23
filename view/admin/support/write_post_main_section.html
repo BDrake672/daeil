@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="/css/admin/support/write_post.css">
 
 <section>
+  <div class="file_upload_modal_window hidden">
+    <div class="loader"></div>
+  </div>
   <div class="form_container">
     <form action="" method="post">
       <div class="post_title">
@@ -16,7 +19,11 @@
       </div>
       <div class="post_attatchments">
         <label for="post_attatchments"><span>첨부파일</span></label>
-        <input type="file" id="post_attatchments">
+        <div class="file_name">
+          <span id="file_name" class="">파일을 선택하세요</span>
+          <button class="button_change_file" type="button" onclick="openInputFile()">첨부파일 선택</button>
+        </div>
+        <input type="file" id="post_attatchments" style="display: none;" onchange="uploadFileAndShowFileName(this)">
       </div>
       <textarea id="summernote" name="editordata" required></textarea>
       <div class="button_post_submit">

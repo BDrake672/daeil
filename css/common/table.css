@@ -35,5 +35,8 @@ tbody td{
   padding: 15px;
   border: none;
   border-bottom: 1px solid #DDD;
-  vertical-align: baseline;
+  vertical-align: middle;
+}
+tbody > tr:first-child{
+  border-top: 1px solid #ddd;
 }

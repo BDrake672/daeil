@@ -1,0 +1,64 @@
+.send_modal_window.hidden{
+  display: none;
+}
+
+.thankyou_message.hidden{
+  display: none;
+}
+
+.send_modal_window{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+section{
+  width: 100%;
+  max-width: 1023px;
+  background-color: #fff;
+}
+form.gform{
+  width: 100%;
+}
+div.form-elements{
+  padding: 10px 30px;
+}
+.form-elements > fieldset{
+  width: 100%;
+}
+.form-elements > fieldset > label{
+  padding-right: 10px;
+}
+
+fieldset.info{
+  display: flex;
+  justify-content: space-between;
+}
+#field, #message{
+  width: 100%;
+}
+
+.thankyou_message{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-width: 500px;
+  height: 300px;
+}
+.thankyou_message > h2{
+  margin-bottom: 50px;
+}
+
+fieldset.submit_form{
+  display: flex;
+  justify-content: flex-end;
+}

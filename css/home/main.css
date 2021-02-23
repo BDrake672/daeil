@@ -29,16 +29,21 @@
 .carousel-caption > h5{
   margin-top: 5px;
 }
+.link_support_fund{
+  cursor: pointer;
+}
 
 /* 메인 섹션 2 */
 .index_section2{
   margin: 10px 0px;
+  padding: 10px 0px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 300px);
   justify-content: center;
   column-gap: 25px;
   row-gap: 20px;
+  background-color: #fff;
 }
 .index_section2 a, .index_section2 a:visited,
 .index_section2 a:hover, .index_section2 a:active {

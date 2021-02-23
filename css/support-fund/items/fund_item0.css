@@ -1,0 +1,48 @@
+@import '/css/common/reset.css';
+
+.target{
+  margin-bottom: 20px;
+}
+.target:last-child{
+  margin-bottom: 0;
+}
+
+.target_contents_container{
+  border: 1px solid var(--logo-color);
+  border-width: 1px 0px;
+  margin-top: 10px;
+  padding: 10px 15px;
+}
+.target_contents_container > a{
+  color: #000;
+}
+.target_contents{
+  min-height: 100px;
+}
+.target_contents > h6 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.target_contents > h6 > span{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #ddd;
+}
+.target_contents > h6 > span.active{
+  font-weight: 600;
+  color: var(--logo-color);
+}
+.target_contents > ul{
+  padding: 0 20px 10px;
+  display: flex;
+}
+.target_contents > ul > li{
+  width: 50%;
+  margin: 0 20px;
+  list-style: disc;
+}
+.target_contents > ul > li:nth-child(odd) {
+  padding-right: 10px;
+  border-right: 1px solid #ddd;
+}

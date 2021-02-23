@@ -1,0 +1,10 @@
+div.form_container{
+  width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+.preview{
+  width: 200px;
+  height: 150px;
+}
