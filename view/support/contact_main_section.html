@@ -1,0 +1,69 @@
+<!-- css -->
+<link rel="stylesheet" href="/css/support/contact_main_section.css">
+<link rel="stylesheet" href="/css/common/nav.css">
+<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+
+<!-- 네비게이션 -->
+<nav class="navigation">
+  <ul class="nav_container">
+    <a href="/view/support/support.html"><li><h6>자료실</h6></li></a>
+    <a href="#" class="current"><li><h6>상담신청</h6></li></a>
+  </ul>
+</nav>
+
+<!-- 상담신청 화면 -->
+<section>
+  <!-- 메일 전송 form -->
+  <form class="gform pure-form pure-form-stacked" method="post" action="">
+    <div class="form-elements">
+      <!-- 스팸 방지용 필드 -->
+      <fieldset class="honeypot-field" style="display: none;">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+      </fieldset>
+
+      <fieldset class="pure-group info">
+        <label for="name">이름</label>
+        <input id="name" name="name" placeholder="이름을 입력하세요" required>
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email" placeholder="mail@mail.com" required>
+        <label for="phone">연락처</label>
+        <input type="tel" name="phone" id="phone" placeholder="010-0000-0000" required>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="field">상담신청 분야</label>
+        <select name="field" id="field" required>
+          <option value="" selected disabled>선택하세요</option>
+          <option value="임금체불/체당금">임금체불, 체당금 관련</option>
+          <option value="산재보상/부당해고">산재보상, 부당해고 관련</option>
+          <option value="인사노무자문/노사관계">인사노무자문, 노사관계관련</option>
+          <option value="정부지원금">정부지원금 관련</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">내용</label>
+        <textarea name="message" id="message" rows="10"></textarea>
+      </fieldset> 
+
+      <fieldset class="pure-group submit_form">
+        <button class="button-success pure-button button-xlarge" type="button">상담신청</button>
+      </fieldset>
+
+    </div>
+
+    <!-- 모달창 -->
+    <div class="send_modal_window hidden">
+      <div class="loader"></div>
+      <div class="thankyou_message hidden">
+        <h2>상담 신청이 완료되었습니다.</h2>
+          <button class="thankyou_button" type="button">확인</button>
+      </div>
+    </div>
+  </form>
+
+</section>
+
+<!-- js -->
+<script src="/js/support/contact_main_section.js"></script>
