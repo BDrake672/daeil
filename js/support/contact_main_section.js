@@ -3,16 +3,6 @@
   emailjs.init("user_OKlWKl84fi2gKToHaS3xf");
   })();
 
-window.addEventListener('load', function() {
-  // 로드 되면 로딩참 숨김
-  closeModalWindow();
-
-  // 버튼에 주입
-  document.querySelector('button.thankyou_button').onclick = hideModalWindow;
-
-  document.querySelector('button.button-success').onclick = sendMail;
-})
-
 // 모달창을 숨겨주는 메서드
 function hideModalWindow() {
   document.querySelector('.send_modal_window').classList.add('hidden');
@@ -75,3 +65,10 @@ function sendMail() {
       sendModal.classList.add('hidden');
     });
 }
+
+// 버튼에 주입
+document.querySelector('button.thankyou_button').onclick = hideModalWindow;
+document.querySelector('button.button-success').onclick = sendMail;
+
+// 로딩참 숨김
+closeModalWindow();
