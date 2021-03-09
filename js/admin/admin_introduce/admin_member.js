@@ -201,7 +201,7 @@ function writeMember() {
   }
 
   console.dir(member);
-  db.ref('public/members/' + dbPath).set(member);
+  db.ref('public/member/' + dbPath).set(member);
   alert('db 입력 성공');
   location.assign('/view/introduce/introduce.html?page=member');
 }
